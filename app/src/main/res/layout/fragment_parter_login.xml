@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/main_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_margin"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/reg_cards_elevation"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="@dimen/card_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.soujuw.android.partner.Views.CellphoneEdit
+                style="@style/LoginCardsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_login_cellphone"
+                app:met_iconLeft="@drawable/ic_phone"
+                app:met_maxCharacters="11" />
+
+
+            <com.soujuw.android.partner.Views.PasswordEdit
+                style="@style/LoginCardsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_login_password"
+                android:inputType="textPassword"
+                app:met_iconLeft="@drawable/ic_lock"
+                app:met_singleLineEllipsis="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <com.soujuw.android.partner.Views.XFlatButton
+                        android:id="@+id/action_login_switch_register"
+                        style="@style/Ripple.FlatButton.Secondary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/btn_switch_to_register" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <com.soujuw.android.partner.Views.XFlatButton
+                        android:id="@+id/action_login_submit"
+                        style="@style/Ripple.FlatButton.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/btn_partner_login" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <com.soujuw.android.partner.Views.XFlatButton
+                        android:id="@+id/action_login_switch_retrieve"
+                        style="@style/Ripple.FlatButton.Secondary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_retrieve_password" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <com.soujuw.android.partner.Views.TrademarkFooterLarge
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

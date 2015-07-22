@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Partner</string>
+    <!-- FRAGMENT没有指定抬头时的默认抬头 -->
+    <string name="app_title">搜居经纪人</string>
+    <string name="app_subtitle">内部测试版 β 0.1.0</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+    <string name="trademark_footer">®2015 搜居网 soujuw.com</string>
+    <string name="trademark_footer_sub">搜居经纪人 FOR ANDROID β</string>
+
+
+    <string name = "navi_section_houses">房源</string>
+    <string name = "navi_house_publish">发布新房源</string>
+    <string name = "navi_house_manage">管理我的房源</string>
+    <string name = "navi_section_client">客源管理</string>
+    <string name = "navi_client_new">添加新客源</string>
+    <string name = "navi_client_manage">管理我的客源</string>
+
+    <string name="navi_settings">程序设置</string>
+    <string name="navi_about">程序信息</string>
+
+
+    <!--main activity-->
+    <string name="tab_caption_main"> 首页 </string>
+    <string name="tab_caption_houses"> 房源中心 </string>
+    <string name="tab_caption_clients"> 客源中心 </string>
+    <string name="tab_caption_user"> 我的搜居 </string>
+
+    <!-- register screen  -->
+    <string name="login_label_username">用户名</string>
+    <string name="reg_label_password">密码</string>
+    <string name="reg_label_confirmPassword">确认密码</string>
+    <string name="reg_label_cellphone">手机</string>
+    <string name="reg_label_verifyCode">验证码</string>
+
+    <string name="login_hint_username">请填写用户名或手机号码</string>
+
+    <string name="hint_register_cellphone">请填写手机号码(默认作为用户名)</string>
+    <string name="hint_register_verify_code">请输入手机验证码</string>
+    <string name="hint_register_password">请设置您的登录密码</string>
+    <string name="hint_register_confirm_password">请确认您的密码</string>
+
+    <string name="btn_get_verify_code">获取验证码</string>
+    <string name="btn_partner_login">登录</string>
+    <string name="btn_partner_register">提交注册</string>
+    <string name="btn_partner_retrieve">找回密码</string>
+    <string name="btn_switch_to_login">登录</string>
+    <string name="btn_switch_to_register">注册</string>
+    <string name="btn_retrieve_password">找回</string>
+
+    <string name="hint_login_cellphone">您的手机号码是?</string>
+    <string name="hint_login_password">您的密码是?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="register_name_digits">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+
+    <string name="function_main_house_explore">房源浏览</string>
+    <string name="function_main_client_explore">客源浏览</string>
+    <string name="function_main_new_building">一手楼盘</string>
+    <string name="function_main_house_manage">我的房源</string>
+    <string name="function_main_client_manage">我的客源</string>
+
+    <string name="function_main_soujubao">搜居宝</string>
+    <string name="function_main_soujudian">搜居店</string>
+    <string name="function_main_myaccount">个人信息</string>
+    <string name="function_main_more">其他功能</string>
+
+    <string name="dialog_exit_confirm_title">确定退出吗?</string>
+    <string name="dialog_exit_confirm_yes">确定</string>
+    <string name="dialog_exit_confirm_no">取消</string>
+
+
+    <string name="toolbar_title_partner_register">经纪人注册</string>
+    <string name="toolbar_title_partner_login">经纪人登录</string>
+    <string name="toolbar_title_partner_retrieve">经纪人账号找回</string>
+
+    <string name="snack_bar_text_item_removed">1 item removed</string>
+    <string name="snack_bar_text_group_item_removed">1 group item removed</string>
+    <string name="snack_bar_text_child_item_removed">1 child item removed</string>
+    <string name="snack_bar_text_button_clicked">Button clicked! (position = %1$d)</string>
+    <string name="snack_bar_action_undo">UNDO</string>
+
+    <string name="dialog_message_item_pinned">Item pinned! (position = %1$d)</string>
+    <string name="dialog_message_group_item_pinned">Group item pinned! (group = %1$d)</string>
+    <string name="dialog_message_child_item_pinned">Child item pinned! (group = %1$d, child = %2$d)</string>
+
+    <string name="register_verify_code_sent">包含验证码的短信已发送到您的手机</string>
+</resources>

@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textViewStyle">@style/FixedTextViewStyle</item>
+    </style>
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="FixedTextViewStyle" parent="android:Widget.TextView">
+        <!-- Override the textColor attribute explicitly to avoid unexpected text color issue on HTC devices -->
+        <item name="android:textColor">@color/abc_primary_text_material_light</item>
+    </style>
+
+    <style name="myRecyclerViewStyle">
+        <!-- NOTE: clipChildren should be true on API level 10 -->
+        <item name="android:clipChildren">true</item>
+        <item name="android:clipToPadding">false</item>
+        <!--<item name="android:paddingBottom">@dimen/activity_vertical_margin</item>-->
+        <!--<item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>-->
+        <!--<item name="android:paddingRight">@dimen/activity_horizontal_margin</item>-->
+        <!--<item name="android:paddingTop">@dimen/activity_vertical_margin</item>-->
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="DialogTheme.Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:radius">2dp</item>
+    </style>
+
+    <style name="LoginCardsEditText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+    <!--FlatButton -->
+    <!--Light/Light color-->
+    <!--最小宽度: 88 dp， 高度: 36 dp 覆盖状态: 20% #999， 点击状态: 40% #999， 不可用状态: 10% #999-->
+    <!--Dark/Dark Color-->
+    <!--最小宽度: 88 dp， 高度: 36 dp 覆盖状态: 15% #ccc， 点击状态: 25% #ccc， 不可用状态: 10% #ccc-->
+    <style name="Ripple" parent="AppTheme">
+        <item name="rd_enable">true</item>
+        <item name="rd_inInterpolator">@android:anim/decelerate_interpolator</item>
+        <item name="rd_outInterpolator">@android:anim/decelerate_interpolator</item>
+        <item name="rd_maskType">rectangle</item>
+        <item name="rd_cornerRadius">2dp</item>
+        <item name="rd_padding">0dp</item>
+        <item name="rd_delayClick">none</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:minWidth">54dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="Ripple.FlatButton" parent="Ripple">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Ripple.FlatButton.Primary" parent="Ripple">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+    <style name="Ripple.FlatButton.Secondary" parent="Ripple">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+    <style name="FunctionIconStyle" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="commonListItemStyle"></style>
+
+    <style name="sectionHeaderItemStyle">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:gravity">left|bottom</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+</resources>

@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/debug_main_page"
+        android:orderInCategory="1"
+        android:title="首页"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/debug_partner_register"
+        android:orderInCategory="10"
+        android:title="注册页"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/debug_partner_login"
+        android:orderInCategory="11"
+        android:title="登陆页"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/debug_partner_retrieve"
+        android:orderInCategory="12"
+        android:title="找回页"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/debug_preview_house"
+        android:orderInCategory="12"
+        android:title="房源浏览"
+        app:showAsAction="never" />
+
+</menu>

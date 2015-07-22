@@ -1,0 +1,77 @@
+import de.greenrobot.daogenerator.DaoGenerator;
+import de.greenrobot.daogenerator.Entity;
+import de.greenrobot.daogenerator.Property;
+import de.greenrobot.daogenerator.Schema;
+import de.greenrobot.daogenerator.ToMany;
+
+
+public class HouseGenerator {
+
+	public static void main(String[] args) throws Exception {
+        Schema schema = new Schema(1, "com.soujuw.android.partner.Dao");
+
+        addNote(schema);
+        //addCustomerOrder(schema);
+
+        new DaoGenerator().generateAll(schema, "D:\\sjpartner\\app\\src\\main\\java");
+    }
+	//Long id, Integer idRemote, String ImageUrl, String Decoration, String Title, Integer BedRooms, Integer LivingRooms, Integer PhotoCount, Integer Price, String District, String RQName, Float GrossArea, Integer Floor, Integer TopFloor, Integer Orientation, Integer BuiltYear, java.util.Date LastEdit, Integer BathRooms, java.util.Date PublishedAt, String Label1, String Label2, String Label3, String Label4
+    private static void addNote(Schema schema) {
+        Entity entity = schema.addEntity("UsedHouse");
+        entity.addIdProperty();//本地ID值
+        entity.addIntProperty("idRemote");//服务器内的ID值.
+        //entity.addFloatProperty("Longitude");//经度
+        //entity.addFloatProperty("Latitude");//纬度
+        entity.addStringProperty("ImageUrl");//图片链接
+        entity.addStringProperty("Title");//房源信息的标题
+        entity.addIntProperty("BedRooms");//室
+        entity.addIntProperty("LivingRooms");//厅
+        entity.addStringProperty("Decoration");//精装..
+        
+        entity.addIntProperty("Price");//价格
+        entity.addStringProperty("District");//立山区..
+        entity.addStringProperty("RQName");//小区名
+        
+        entity.addFloatProperty("GrossArea");//建筑面积
+        entity.addIntProperty("PhotoCount");//照片数量
+        entity.addIntProperty("Floor");//楼层
+        entity.addIntProperty("TopFloor");//楼层总数
+        entity.addIntProperty("Orientation");//朝向
+        entity.addIntProperty("BuiltYear");//建筑年份
+        
+       
+//        entity.addIntProperty("");//
+        
+        
+        
+        entity.addDateProperty("LastEdit");//发布日期
+        entity.addIntProperty("BathRooms");//卫
+        entity.addDateProperty("PublishedAt");//发布日期
+        entity.addStringProperty("Label1");//标签,例如【南北通透】
+        entity.addStringProperty("Label2");//标签
+        entity.addStringProperty("Label3");//标签
+        entity.addStringProperty("Label4");//标签
+//        entity.addStringProperty("");//
+//        entity.addStringProperty("");//
+//        entity.addStringProperty("");//
+//        entity.addStringProperty("");//
+    }
+
+//    private static void addCustomerOrder(Schema schema) {
+//        Entity customer = schema.addEntity("Customer");
+//        customer.addIdProperty();
+//        customer.addStringProperty("name").notNull();
+//
+//        Entity order = schema.addEntity("Order");
+//        order.setTableName("ORDERS"); // "ORDER" is a reserved keyword
+//        order.addIdProperty();
+//        Property orderDate = order.addDateProperty("date").getProperty();
+//        Property customerId = order.addLongProperty("customerId").notNull().getProperty();
+//        order.addToOne(customer, customerId);
+//
+//        ToMany customerToOrders = customer.addToMany(order, customerId);
+//        customerToOrders.setName("orders");
+//        customerToOrders.orderAsc(orderDate);
+//    }
+
+}

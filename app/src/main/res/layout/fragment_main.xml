@@ -1,0 +1,93 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.soujuw.partnerandroid.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/main_banner" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:id="@+id/utils_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/function_main_house_explore"
+                style="@style/FunctionIconStyle"
+                android:drawableTop="@drawable/ic_function_explore_houses"
+                android:text="@string/function_main_house_explore" />
+
+            <TextView
+
+                android:id="@+id/function_main_client_explore"
+                style="@style/FunctionIconStyle"
+                android:drawableTop="@drawable/ic_function_explore_clients"
+                android:text="@string/function_main_client_explore" />
+
+            <TextView
+                android:id="@+id/function_main_new_building"
+                style="@style/FunctionIconStyle"
+                android:drawableTop="@drawable/ic_function_new_building"
+                android:text="@string/function_main_new_building" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/utils_row2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/function_main_house_manage"
+                style="@style/FunctionIconStyle"
+                android:drawableTop="@drawable/ic_function_house_manage"
+                android:text="@string/function_main_house_manage" />
+
+            <TextView
+                android:id="@+id/function_main_client_manage"
+                style="@style/FunctionIconStyle"
+                android:drawableTop="@drawable/ic_function_client_manage"
+                android:text="@string/function_main_client_manage"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:id="@+id/function_main_soujudian"
+                style="@style/FunctionIconStyle"
+                android:drawableTop="@drawable/ic_function_soujudian"
+                android:text="@string/function_main_soujudian" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/utils_row3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/function_main_my_account"
+                style="@style/FunctionIconStyle"
+                android:drawableTop="@drawable/ic_function_my_account"
+                android:text="@string/function_main_myaccount" />
+
+            <TextView
+                android:id="@+id/function_main_soujubao"
+                style="@style/FunctionIconStyle"
+                android:drawableTop="@drawable/ic_function_soujubao"
+                android:text="@string/function_main_soujubao" />
+
+            <TextView
+                android:id="@+id/function_main_more"
+                style="@style/FunctionIconStyle"
+                android:drawableTop="@drawable/ic_function_more"
+                android:text="@string/function_main_more" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
